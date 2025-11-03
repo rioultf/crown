@@ -41,9 +41,9 @@ export function useAnimationEngineStatic({ data, bpm = 60, numCrowns = 3 }) {
     for (let crownId = 0; crownId < numCrowns; crownId++) {
       newConfigs.push({
         crownId,
-        period:       8 + segments[idx],                            // période fixe 8 s
+        period:       8, // + segments[idx],                            // période fixe 8 s
         division:     segments[idx] || 1,
-        width:        0.5 + crownId * 0.1,           // progression d’épaisseur
+        width:        0.5, // + crownId * 0.1,           // progression d’épaisseur
         phaseShifted: false, //crownId % 2 === 0,
         tonalityId:   segments[idx],
         color:        null,
