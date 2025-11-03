@@ -87,6 +87,7 @@ export default function CrownWedges({ id, motifConfig = {} }) {
   }, [division, width, color, opacity, innerRadius, outerRadius, phaseOffset]);
 
   //transformOrigin="0% 0%"
+  // éloigne le centre
   return (
     <g
       ref={groupRef}
