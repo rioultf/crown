@@ -35,7 +35,7 @@ export default function CrownWedges({ id, motifConfig = {} }) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         groupRef.current,
-        { scale: 0.8 },
+        { scale: 1 },
         { scale: 1, duration: 0.4, ease: "power2.out" }
       );
       // mise à jour de l’opacité et couleur
